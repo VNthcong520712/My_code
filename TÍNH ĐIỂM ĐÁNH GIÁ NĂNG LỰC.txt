@@ -1,0 +1,33 @@
+TÍNH ĐIỂM ĐÁNH GIÁ NĂNG LỰC
+
+Kì thi đánh giá năng lực là một trong những kì thi quan trọng mà các sĩ tử sử dụng điểm này để xét tuyển ở nhiều trường. Trong kì thi này, có tổng cộng N câu hỏi gồm phần ngôn ngữ là tiếng Việt và tiếng Anh, phần toán học và tư duy logic và phần kiến thức xã hội. Việc chấm điểm cho kì thi này được thực hiện theo cơ chế sau: 
+	câu hỏi có nhiều thí sinh trả lời đúng nhất sẽ có điểm thấp nhất và câu hỏi có nhiều thí sinh trả lời đúng nhất sẽ có điểm cao nhất
+	tổng điểm của bài thi là K
+
+Yêu cầu: bạn hãy viết ra chương trình để chấm điểm của kì thi đánh giá năng lực này. Dữ liệu vào gồm 3 hàng
+ * Hàng đầu là số câu hỏi N và số điểm của kì thi là K 
+ * Hàng thứ 2 là danh sách C là các câu mà một thi sinh là được (C <= N)
+ * Hàng thứ 3 là danh sách S là số người làm đúng đáp án theo bộ câu hỏi (theo thứ tự từ 1 đến N) 
+
+Giới hạn:	0 < N, K <= 10^9
+		0 < Ci <=N
+		0 <= S <= 10^5
+
+INPUT: hàng đầu gồm N và K
+	 gồm i số là số câu hỏi mà thí sinh trả lời đúng và không được lặp lại
+	 gồm N số là số người trả lời đúng mỗi câu theo thứ tự bộ đề
+OUTPUT: điểm của thí sinh làm tròn 2 chữ số thập phân
+		
+
+
+
+
+
+12 720 									542.09
+1 5 2 9 10 8 6 3 7 12
+30 7 45 6 12 78 9 12 12 46 31 83
+
+
+5 33    									9.01
+1 4 2 3
+12 89 4 32 1

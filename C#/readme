@@ -1,0 +1,18 @@
+using System;  // nghia la co the xu dung lop trong khonggian he thong
+
+namespace HelloWorld // khong duoc de trong
+{
+  class Program //
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");  
+      // neu quen khong them using System thi in ra se la System.Console.WriteLine("nnn");  
+    }
+  }
+}
+
+var su dung de khai bao khong tuong minh, nghia la khong biet truoc 
+kieu du lieu va kieu du lieu se duoc xac dinh khi gan bien.
+
+create new project: cd to right foder and type in cmd #

@@ -1,0 +1,12 @@
+tham chiếu:
+-- "&" : các biến khác nhau cùng lấy dữ liệu từ một địa chỉ
+	vd: food = "ghj" ----- &mmi = food   ----->  mmi = "ghj"   ----->  &mmi = địa chỉ ô lưu giá trị
+
+con trỏ:
+-- "*" dùng để khai báo biến lưu loại dữ liệu địa chỉ
+   	khi dùng * trước một biến khai bảo lưu địa chỉ thì sẽ cho ra giá trị tại địa chỉ đó
+	vd: *a = &g ----> a = địa chỉ  ----->  *a = giá trị
+
+khi dùng "*" trước biến con trỏ thì ta có thế gán giá trị vào địa chỉ ô đó và các biến lấy giá trị từ
+địa chỉ ô đó sẽ được cập nhật giá trị mới
+

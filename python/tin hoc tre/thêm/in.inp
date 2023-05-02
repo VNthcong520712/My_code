@@ -1,0 +1,22 @@
+nhập vào n, m, x
+
+biến địa phương (dp)
+số lượng thí sinh ở địa phương đó (sl)
+
+n dòng tiếp theo nhập vào p, v, d, l
+    nếu l == 2 thì thêm vào dsd
+        thêm vào địa phương nếu chưa có trong dp
+        tăng P
+    khác
+        thêm vào dsts với điểm đứng đầu
+
+sắp xếp dsts và dsdp
+cho i chạy trong n
+    nếu địa phương vị trí i chưa có trong dp 
+        thì thêm điểm và địa phương vào dsdp
+        tăng Q
+    
+sắp xếp dsd
+k = m - q - p
+r = dsd[k][0] + 1
+

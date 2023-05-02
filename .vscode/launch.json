@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Visual Studio Project_8dc3993d"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/C#/assignment/ptb2/bin/Debug/net5.0/C#.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/C#/assignment/ptb2",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}

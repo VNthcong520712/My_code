@@ -1,0 +1,8 @@
+long type ended by L
+float type ended by f
+double type ended by D
+ex equal 10^x and it only use for floating
+if you add number and s string, result is string
+string -> str.length()
+array -> arr.length
+for (type variable : array)  
