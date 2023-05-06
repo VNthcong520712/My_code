@@ -2,25 +2,25 @@
 #include <math.h>
 using namespace std;
 
-bool check(int a){
+bool check(int num){
 	int count = 0; 
-	for(int i = 1; i <= sqrt(a); i++){
-		if(a%i == 0){
-			if(a % (int)(a/i) == 0 && i != (int)(a/i)) count += 2;
+	for(int i = 1; i <= sqrt(num); i++){
+		if(num%i == 0){
+			if(num % (int)(num/i) == 0 && i != (int)(num/i)) count += 2;
 			else count ++;
 		}
 	}
-	if(a != 1 && count == 2){
+	if(num != 1 && count == 2){
 		return 1;
 	} else {
 		return 0;
 	}
 }
 
-bool inarr(int *arr, int x){
+bool inarr(int *arr, int len, int num){
 	bool out = false;
-	for(int i = 0; i < sizeof(arr)/sizeof(int); i ++){
-		if(x == arr[i]){
+	for(int i = 0; i < len; i ++){
+		if(num == arr[i]){
 			out = true; 
 			break;
 		}
@@ -28,8 +28,7 @@ bool inarr(int *arr, int x){
 	return out; 
 }
 
-void xuat(int * arr){
-	int len = sizeof(arr)/sizeof(arr[0]);
+void xuat(int * arr, int len){
 	for(int i = 0; i < len; i ++){
 	 	int min = arr[0];
 		for(int z = 0; z < i; z ++){
@@ -45,16 +44,12 @@ void xuat(int * arr){
 }
 
 int main(){
-	// int n; 
-	// cin >> n;
-	// for(int i = 0; i < n; i ++){
-	// 	int z;
-	// 	cin >> z;
-	// 	if(check(z)) cout << z << endl;
-	// }
-	int a[5] = {1, 4, 2, 4, 4};
-	cout << inarr(a, 4);
-	// int a[6] = {7, 2, 3, 5, 1, 5};
-	// // xuat(a);
-	// cout << inarr(a, 5);
+	int n; 
+	cin >> n;
+	int nguyento[n];
+	for(int i = 0; i < n; i ++){
+		int z;
+		cin >> z;
+		if(check(z) && inarr(nguyento, n, z)) cout << z << endl;
+	}
 }
