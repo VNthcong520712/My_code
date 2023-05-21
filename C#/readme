@@ -15,4 +15,4 @@ namespace HelloWorld // khong duoc de trong
 var su dung de khai bao khong tuong minh, nghia la khong biet truoc 
 kieu du lieu va kieu du lieu se duoc xac dinh khi gan bien.
 
-create new project: cd to right foder and type in cmd #
+create new project: cd to right foder and type in cmd # and .\# with powershell
