@@ -7,9 +7,9 @@ int main(){
 	cin >> a >> b >> c >> d >> e >> f;
 	long long tx, ty, tz;
 	double x, y;
-	tx = (long)-f*b+e*c;
-	ty = (long)-c*d+f*a;
-	tz = (long)a*e-d*b;
+	tx = (long)-f*b+(long)e*c;
+	ty = (long)-c*d+(long)f*a;
+	tz = (long)a*e-(long)d*b;
 
 	cout << "tx: " << tx << "  ty: " << ty << "  tz: " << tz << endl;
 
