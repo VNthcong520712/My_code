@@ -7,11 +7,10 @@ int main(){
 	cin >> a >> b >> c >> d >> e >> f;
 	long long tx, ty, tz;
 	double x, y;
-
+	//giai phuong trinh bang pp
 	tx = (long)-f*b+(long)e*c;
 	ty = (long)-c*d+(long)f*a;
 	tz = (long)a*e-(long)d*b;
-
 	if(tz == 0){
 		if(tx == 0 && ty == 0) cout << "VOSONGHIEM";
 		else cout << "VONGHIEM";
