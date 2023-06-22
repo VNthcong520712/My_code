@@ -1,5 +1,15 @@
+/*
+A array with n integer, find and print number is needed
+---
+get n
+create array with n element and get input, in this loop listed number equal 2 or not divisible for 2(B array)
+
+*/
+
+
+
+
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 bool check(int num){
