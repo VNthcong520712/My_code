@@ -56,7 +56,7 @@ void xuat(int * arr, int len){
 int main(){
 	int n; 
 	cin >> n;
-	int nguyento[n];
+	int nguyento[9];
 	for(int i = 0; i < n; i ++){
 		int z;
 		cin >> z;

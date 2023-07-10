@@ -1,0 +1,12 @@
+each elemet was compared with the key, if this is correct answer, the result return its index, else if wrong answer, index is added one and continue loop.
+
+ex: arr[] = {1,6,2,4,2,6,7,2,6,0,8,9} key = 4
+(arr[0] == 4)? => false
+(arr[1] == 4)? => false
+(arr[2] == 4)? => false
+(arr[3] == 4)? => true => return 3 and break loop
+
+O(N) with N is the size
+
+not good for large arrays
+
