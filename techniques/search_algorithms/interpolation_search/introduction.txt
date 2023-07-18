@@ -1,0 +1,35 @@
+given a sorted arr, bianry search always start at
+mid element, according to interpolation search, 
+it will choose pos which is closer to the key,
+start at starting or ending. It need to follow the
+formula:
+pos = lo + ((x-arr[lo])*(hi-lo))/(arr[hi]-arr(lo)) (a)
+
+explain:
+assume: y is value and x is its index
+X: 0 1 2 3 4 5
+y: 2 5 6 7 9 10
+general equation of line: y = ax + b
+now putting value lo, hi and x in the equation
+arr[hi] = a.hi+b  (1)
+arr[lo] = a.lo+b  (2)
+x  		= a.pos+b (3)
+
+(1) - (2) = m = (arr[hi] - arr[lo])/(hi - lo)
+(2) - (3) = x - arr[lo] = m*(pos - lo)
+<=> pos = lo + (x - arr[lo])/mid
+<=> pos = (a)
+
+process:
+s1: in loop, calculate the value of 'pos' using 
+the formula
+
+s2: if it is a match, return the index for item
+
+s3: less than arr[pos], calculate the probe 
+position of the left sub-arr. Otherwise, calculate 
+the same in the right sub-arr
+
+s4: repeat intil a match is fond or the sub-arr
+reduces to 0
+
