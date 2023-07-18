@@ -1,0 +1,14 @@
+use for sorted arr, arr with n elements, choose
+the step (m) to jump, and when jump to km with 
+larger than key, use linear search to find element
+between (k-1)m and km
+
+arr: 1 1 2 4 5 7 8 10 23 45
+step = 4; 
+key = 23
+s1: 0 -> 4
+s2: 4 -> 8
+s3: arr[8] larger than key, so we use linear search 
+from index 4 to 8
+
+linear search < jump search < binary search
