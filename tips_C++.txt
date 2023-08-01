@@ -1,0 +1,4 @@
+{swap(arr[j], arr[h]} // use to swap their value
+
+When you want to return arr from function, use the pointer, define func with *, for example {int *funcA()} and then, return arr's name, and catching value must is the pointer too, {int *p = fun ()}, {cout << *(p + i)} to print arr's values.
+

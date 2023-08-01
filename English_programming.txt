@@ -1,0 +1,10 @@
+swap (v): trao doi
+adjacent (n): lien ke
+order (n): sap xep
+again (v): lap lai
+against (v): chong lai
+pick (v): chon loc
+ascend (v): treo len
+iterate (v): nhac di nhac lai
+predecessor (n): truoc day, tien nhiem
+hence (adv): ke tu day, vi the
