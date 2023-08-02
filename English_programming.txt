@@ -8,3 +8,4 @@ ascend (v): treo len
 iterate (v): nhac di nhac lai
 predecessor (n): truoc day, tien nhiem
 hence (adv): ke tu day, vi the
+precise (adj): chinh xac

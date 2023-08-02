@@ -23,8 +23,8 @@ int jump_search(int arr[], int key, int n){
 int main(){
 	int arr[] = {1,5,8,12,65,98,123,235,643,674,677,827, 982,36673};
 	int n = sizeof(arr)/sizeof(arr[0]);
-	int x = 3663;
-	int result = jump_search(arr, x, n);
+	int x = 36673;
+	int result = jump_search(arr, x, n-1);
 	(result == -1)? cout << "not found"
 				  : cout << result;
 }
