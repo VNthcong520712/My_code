@@ -1,0 +1,21 @@
+search {
+binary
+interpolation
+jump
+linear
+}
+
+sort {
+bubble
+insertion
+}
+
+other{
+dijkstra
+bellman-ford
+A*
+floyd-warshall
+johnson
+}
+
+perturbation theory
