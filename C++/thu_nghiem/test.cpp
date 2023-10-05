@@ -1,29 +1,9 @@
-<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
 int main(){
-	
-}
-=======
-#include<iostream>
-
-using namespace std;
-
-int main() {
-    int n, max;
-    cin >> n;
-    int a[n];
-    for(int i = 0; i < n; i++){
-        cin >> a[i];
-        if(i == 0) {
-            max = a[0];
-            continue;
-        }else{
-            if(a[i] > max) max = a[i];
-        } 
+    int ad[32] = {0};
+    for(int i = 0; i < 32; i++ ){
+        cout << ad[i] << endl;
     }
-    cout << max;
-    return 0;
 }
->>>>>>> a855551 (TC code)

@@ -1,0 +1,35 @@
+input in java: 
+import java.util.Scanner;
+
+Scanner temple = new Sanner(System.in)<datatype> <variable_name> = temple.next();
+<datatype> <variable_name> = temple.next();
+.
+.
+.
+
+temple.next for string inconsistency and
+temple.nextLine for consistency string
+temple.nextInt for integer numbers
+temple.nextDouble for real numbers
+
+
+
+
+take a char from java, we must take a string an then we get the first character:
+char a = next().charAt(0);
+
+
+
+in java, instead use == to compare two strings, we should use equal():
+a.equals(b);
+
+
+java method:
+-"afaF".replace("a", "c");
+-"afaf".toUpperCase()
+-"afaf".toLowerCase()
+-"afaf".indexOf("af") => 0
+-"afaf".startsWith("af") => true
+-"afaf".endsWith("hG") => false
+-"afaf".split("a")
+-"afaf".substring(0,3) => afa

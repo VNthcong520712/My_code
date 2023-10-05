@@ -1,0 +1,10 @@
+abstraction:
+encapsulation:
+polymorphism:
+inheritance:
+
+few kinds of operations that a client may perform on an object:
+- modifier
+- selector
+- constructor
+- destructor
