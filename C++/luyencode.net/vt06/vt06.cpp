@@ -7,7 +7,7 @@ int main(){
 	cin >> n;
 	for(int i = 0; i < n; i++){
 		int z;
-		cin >> z;cc
+		cin >> z;
 		if(z % 2 != 0){
 			sum += z;
 			t ++;

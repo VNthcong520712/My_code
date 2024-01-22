@@ -1,65 +1,40 @@
-/*
-A array with n integer, find and print number is needed
----
-get n
-create array with n element and get input, in this loop listed number equal 2 or not divisible for 2(B array)
-
-*/
-
-
-
-
 #include <iostream>
-using namespace std;
+#include <math.h>
+using namespace std; 
 
-bool check(int num){
-	int count = 0; 
-	for(int i = 1; i <= sqrt(num); i++){
-		if(num%i == 0){
-			if(num % (int)(num/i) == 0 && i != (int)(num/i)) count += 2;
-			else count ++;
-		}
-	}
-	if(num != 1 && count == 2){
-		return 1;
-	} else {
-		return 0;
-	}
-}
-
-bool inarr(int *arr, int len, int num){
-	bool out = false;
-	for(int i = 0; i < len; i ++){
-		if(num == arr[i]){
-			out = true; 
-			break;
-		}
-	}
-	return out; 
-}
-
-void xuat(int * arr, int len){
-	for(int i = 0; i < len; i ++){
-	 	int min = arr[0];
-		for(int z = 0; z < i; z ++){
-			if(arr[z] < min){
-				int p = min;
-				min = arr[z];
-				arr[z] = p;
+bool ktnt(int a){
+	int dem = 0;
+	for(int i = 1; i <= sqrt(a); i ++){
+		if(a % i == 0){
+			if(a % (a/i) == 0){
+				dem += 2;
 			}
+			else dem ++;
 		}
-		if(i > 0) cout << arr[i-1] << " ";
+		
 	}
-	cout << arr[len-1];
+	return (dem == 2 && 2 <= a);
 }
 
 int main(){
 	int n; 
 	cin >> n;
-	int nguyento[9];
-	for(int i = 0; i < n; i ++){
-		int z;
-		cin >> z;
-		if(check(z) && inarr(nguyento, n, z)) cout << z << endl;
+	int a[n];
+	bool sol[1000] = {false};
+	int max = 0;
+	for(int i = 0; i < n; i++){
+		cin >> a[i];
+		if(ktnt(a[i])){
+			sol[a[i]] = true;
+			if (a[i] > max){
+				max = a[i];
+			}
+		}
+	}
+	for(int i = 0; i <= max; i++){
+		if(sol[i]){
+			cout << i;
+			if(i < max) cout << " ";
+		}
 	}
 }

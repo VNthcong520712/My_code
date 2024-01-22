@@ -1,14 +1,26 @@
 #include <iostream>
+using namespace std;
 
-int aa(int p){
-	static int d = 15;
-	std::cout << d << " " << p<<"--";
-	d+= p;
-	std::cout << d<<";";
-	return d;
+int abs(int u){
+	if (u < 0){
+		u = -u;
+	}
+	return u; 
+}
+
+int max(int x, int y){
+	int max = (int) (abs(x-y) + x + y)/2;
+	return max;
+}
+
+int min(int x, int y){
+	int min = (int) (abs(x-y) - x - y)/2;
+	return min;
 }
 
 int main(){
-	int a = 4;
-	std::cout <<aa(a-1+ aa(a + aa(a-3)));
+	int a, b, c;
+	cin >> a >> b >> c;
+	cout << max(max(a,b),c) << "\n" << min(min(a, b), c);
+
 }
