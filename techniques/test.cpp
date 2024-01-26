@@ -1,15 +1,22 @@
 #include <bits/stdc++.h> 
 using namespace std;
 
-int how(int arr[], int s){
-	// return arr;
-	arr[2] = 32;
+int how(int l, int m, int r){
+	cout << "     " << l << " " << m << " " << r << endl;
+}
+
+int test(int a, int b){
+	int mid = a + (b-a)/2;
+	if(b <= a){
+		return 0;
+	}
+		cout << a << " " << b << endl;
+	test(a, mid);
+	cout << endl ;
+	test(mid+1, b);
+	how(a, mid, b);
 }
 
 int main(){
-	int arr[] = {3,41,3,5,2};
-	how(arr, 5);
-	for(int i = 0; i < 5; i ++){
-		cout << arr[i];
-	}
+	test(0, 5);
 }
