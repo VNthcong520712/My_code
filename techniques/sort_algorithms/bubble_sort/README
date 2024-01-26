@@ -1,8 +1,0 @@
-bubble sort is the simplest sorting algorithm,
-repeatedly swapping the adjacent elements if they
-are in wrong order
-
-ex: arr{1,7,2,3,9,4}
-low2high:
-repeating compare arr[end] = 4 with previous values
-when 4 > 1, break loop and loop again with arr[end-1]

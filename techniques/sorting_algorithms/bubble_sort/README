@@ -1,0 +1,20 @@
+Bubble Sort is the simplest sorting algorithm that
+works by repeatedly swapping the adjacent elements
+if they are in the wrong order. This algorithm is
+not suitable for large data sets as its average
+and worst-case time complexity is quite high.
+
+ex: arr{1,7,2,3,9,4}
+low2high:
+pseudocode:
+
+for i run from 0 -> end:
+	for j rum from 0 -> end - i - 1:
+		if arr[j+1] > arr[j]:
+			swap
+
+1st: 1 2 3 7 4 9
+2nd: 1 2 3 4 7 9
+3rd: 1 2 3 4 7 9
+
+complexity analysis: O(N^2)
