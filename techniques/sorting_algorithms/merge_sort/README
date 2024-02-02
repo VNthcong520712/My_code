@@ -2,5 +2,54 @@ Merge sort is defined as a sorting algorithm that works by dividing an array int
 and then merging the sorted subarrays back together 
 to form the final sorted array.
 
-ex: {1, 4, 4, 8, 3, 0, 6}
+ex: {1, 4, 4, 8, 3, 0, 6, 9}
 low2high
+pseudocode
+
+def split(begin, end):
+	if(begin <= end):
+		return
+	(int) mid = begin + (end-begin)/2
+	split(begin, mid)
+	split(mid+1, end)
+	sort(begin, mid, end)
+
+def sort(begin, mid, end):
+    leftarr = arr[begin, mid]
+	rightarr = arr[mid+1, end]
+
+	lengthleft = mid - begin + 1
+	lengthright = end - mid
+
+ 	indexleft = indexright = 0
+	indexmerge = begin
+
+	while indexleft < lengthleft and indexright < lengthright: 
+		if leftarr[indexleft] < rightarr[indexright]:
+			arr[indexmerge] = leftarr[indexleft]
+		 	indexleft ++
+		else:
+			arr[indexmerge] = rightarr[indexright]
+			indexright++
+		indexmerge ++
+
+	while indexleft < lengthleft:
+		arr[indexmerge] = leftarr[indexleft]
+		indexleft ++
+		indexmerge ++
+
+	while indexright < lengthright:
+		arr[indexmerge] = rightarr[indexright]
+		indexright ++
+		indexmerge ++
+
+
+split(0, end_arr)
+
+					1, 4, 4, 8, 3, 0, 6, 9
+				1, 4, 4, 8      	   8, 3, 0, 6
+			1, 4      4, 8             8, 3	    	0, 6
+		1	4		4		8		8		3 	0		6
+compare each gr and merge 
+
+Complexity analysis O(N log(N))
