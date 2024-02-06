@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(626, 811)
+        MainWindow.resize(626, 626)
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
