@@ -10,7 +10,7 @@ void nhiphan(int i, int n, int s = 1, int k = 0){
 		if (j == 1) k = 1;
 		if(s >= n){
 			if(k ==1){
-				if (count == i) break;
+				if (count == i) return;
 				cout << X ;
 				count ++;
 				cout << endl;
@@ -22,6 +22,6 @@ void nhiphan(int i, int n, int s = 1, int k = 0){
 
 int main(){
 	int n, k;
-	cin >> k >> n;
+	cin >> n >> k;
 	nhiphan(k, n);
 }
